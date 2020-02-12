@@ -1,9 +1,26 @@
 * {
     // Resets gab above the Nav element
     margin: 0;
-    color: #2f2e2e;
+    list-style-type:none;
 }
-body {
+a {
+    text-decoration: none;
+}
+.flex {
+    // Applied to keep all inner divs centered.
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+
     // background-image: url("../assets/img/72.jpg")
-    background: #EDE8C9;
+    background: #FFFBF6;
+}
+
+.wrapper {
+    max-width: 1200px;
+}
+
+.full-width-color {
+    background-color: #242424;
+    width: 100%;
 }
