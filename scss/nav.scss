@@ -1,0 +1,27 @@
+nav {
+    background: #ede8c9;
+
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+
+    height:70px;
+    .nav-items {
+        width: 25%;
+    }
+    .nav-social {
+        width:15%;
+    }
+    ul {
+        display:flex;
+        justify-content: space-around;
+        li {
+            list-style: none;
+            a {
+                text-decoration: none;
+
+                font-size: 1.05rem;
+            }
+        }
+    }
+}
