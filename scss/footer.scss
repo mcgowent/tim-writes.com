@@ -1,0 +1,32 @@
+.footer {
+    height: 400px;
+
+
+    margin-top: 250px;
+    @include font-color-2;
+    .footer-flex{
+        padding-bottom: 50px;
+
+        display:flex;
+        flex-direction: column;
+
+        font-size: 2rem;
+        p {
+            padding-top: 20px;
+            font-size: 4rem;
+            font-weight: 900;
+
+        }
+        @include font-4;
+        i{
+            padding-top:25px;
+        }
+    }
+
+    .footer-bottom {
+        display:flex;
+        justify-content: space-between;
+
+        width: 100%;
+    }
+}

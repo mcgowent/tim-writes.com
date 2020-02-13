@@ -9,7 +9,8 @@ a {
 .flex {
     // Applied to keep all inner divs centered.
     @include flex;
-    background: #FFFBF6;
+    @include color-1;
+
 }
 .wrapper {
     max-width: 1200px;
