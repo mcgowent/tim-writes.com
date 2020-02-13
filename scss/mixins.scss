@@ -1,0 +1,90 @@
+@mixin flex {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+}
+@mixin flex-r {
+    display: flex;
+    flex-flow: row nowrap;
+}
+
+
+// FONT COLORS
+@mixin font-color-1 {
+    // Name Title Green
+    color: #5DBEB2;
+}
+@mixin font-color-2 {
+    // White Text
+    color: white;
+}
+@mixin font-color-3 {
+    // Grey Text
+    color: #3A3A3A;   
+}
+@mixin font-color-4 {
+    // Black Text
+    color: black;
+}
+@mixin font-color-5 {
+    // Grey Text
+    color: #5A5A5A;   
+}
+
+
+// Font Styles
+@mixin font-1 {
+    font-family: 'Jockey One', sans-serif;
+}
+@mixin font-2 {
+    font-family: 'Roboto', sans-serif;
+}
+@mixin font-3 {
+    font-family: 'Roboto Condensed', sans-serif;
+}
+@mixin font-4 {
+    font-family: 'EB Garamond', serif;
+}
+@mixin font-5 {
+    font-family: 'Garamond', serif;
+}
+ 
+// Background Colors
+@mixin color-1 {
+    // Paper off-white
+    background-color: #FFFBF6;
+}
+@mixin color-2 {
+    // White
+    background-color: white;
+}
+@mixin color-3 {
+    // Lighter Black
+    background-color: #242424;
+}
+@mixin color-4 {
+    // Grey
+    background-color: #656565;
+}
+@mixin color-5 {
+    // Dark-Green
+    background-color: #245D50;
+}
+@mixin color-6 {
+    // Button-Greens
+    background-color: #54B6AA;
+}
+
+// How to use a mixin? 
+// .row {
+//     @include flex;
+// }
+
+// How to do conditions with mixins?
+// @mixin grid($flex) {
+//     @if $flex {
+//         @include flex;
+//     } @else {
+//         display: block;
+//     }
+// }

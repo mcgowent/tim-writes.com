@@ -8,15 +8,18 @@
     <link href="./css/index.css" rel="stylesheet" type="text/css" />
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.12.1/css/all.css"
         integrity="sha384-v8BU367qNbs/aIZIxuivaU55N5GPF89WBerHoGA4QTcbUjYiLQtKdrfXnqAcXyTv" crossorigin="anonymous">
+    <link
+        href="https://fonts.googleapis.com/css?family=Cormorant+Garamond|EB+Garamond|Jockey+One|Roboto|Roboto+Condensed&display=swap"
+        rel="stylesheet">
     <title>Timothy M. McGowen</title>
 </head>
 
 <body class="flex">
-    <header class="full-width-color flex">
-        <h1 class="wrapper">Timothy M. McGowen</h1>
+    <header class="full-width-color flex header">
+        <h1 class="wrapper name">Timothy M. McGowen</h1>
     </header>
     <nav class="wrapper">
-        <ul class="nav-items styles-off">
+        <ul class="styles-off nav">
             <li><a href="#">Home</a></li>
             <li><a href="#">Books</a></li>
             <li><a href="#">Art</a></li>
@@ -31,12 +34,14 @@
                 <!-- Attach an Image-Background here -->
                 <!-- The Book Title should be a PNG img, but I am using a font for now. -->
                 <h1>ELDRITCH KNIGHT</h1>
-                <p>AVAILABLE ON 5-5-20!</p>
-                <button>Pre-Order on Amazon!</button>
-            </section>
-            <section>
                 <div>
-                    <img src="#" alt="Image of Author Timothy M. McGowen" />
+                    <p>AVAILABLE ON 5-5-20!</p>
+                    <button>Pre-Order on Amazon!</button>
+                </div>
+            </section>
+            <section class="about-upcoming">
+                <div class="about">
+                    <img src="./assets/img/image0.jpeg" height="265px" alt="Image of Author Timothy M. McGowen" />
                     <div>
                         <h3>About Me</h3>
                         <p>Zombie ipsum reversus ab viral inferno, nam rick grimes malum cerebro. De carne lumbering
@@ -52,33 +57,26 @@
                             carnem virus.</p>
                     </div>
                 </div>
-                <div>
+                <div class="upcoming">
                     <h3>Upcoming Releases</h3>
-                    <div>
-                        <h5>Book Name</h5>
-                        <h5>Percent Finished</h5>
-                        <h5>Estimated Release</h5>
-                    </div>
-                    <div>
-                        <div>
-                            <p>Book Name Here</p>
-                            <p>90%</p>
-                            <p>02-05-2021</p>
+                    <div class="flex-fix">
+                        <div class="book-cat">
+                            <h5>Book Name</h5>
+                            <h5>Estimated Release</h5>
                         </div>
-                        <div>
-                            <p>Book Name Here</p>
-                            <p>90%</p>
-                            <p>02-05-2021</p>
-                        </div>
-                        <div>
-                            <p>Book Name Here</p>
-                            <p>90%</p>
-                            <p>02-05-2021</p>
-                        </div>
-                        <div>
-                            <p>Book Name Here</p>
-                            <p>90%</p>
-                            <p>02-05-2021</p>
+                        <div class="book-bundle">
+                            <div class="book-info">
+                                <p>Eldritch Knight Book 1</p>
+                                <p>05-05-2020</p>
+                            </div>
+                            <div class="book-info">
+                                <p>Last Born of Ki'dath Book 1</p>
+                                <p>08-05-2020</p>
+                            </div>
+                            <div class="book-info">
+                                <p>Last Born of Ki'dath Book 2</p>
+                                <p>02-05-2021</p>
+                            </div>
                         </div>
                     </div>
                 </div>

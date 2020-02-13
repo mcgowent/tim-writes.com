@@ -8,18 +8,12 @@ a {
 }
 .flex {
     // Applied to keep all inner divs centered.
-    display: flex;
-    flex-flow: column wrap;
-    align-items: center;
-
-    // background-image: url("../assets/img/72.jpg")
+    @include flex;
     background: #FFFBF6;
 }
-
 .wrapper {
     max-width: 1200px;
 }
-
 .full-width-color {
     background-color: #242424;
     width: 100%;

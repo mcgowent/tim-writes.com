@@ -1,2 +1,118 @@
+
 .header {
+    justify-content: center;
+    height: 90px;
+}
+
+.name {
+    @include font-1;
+    @include font-color-1;
+    font-size: 3.8rem;
+    font-weight: 100;
+    // Normalization was adding margin?
+    margin: 0;
+    margin-top: -10px;
+}
+
+.banner {
+
+    background-image: url("../assets/img/Cover2.jpg");
+    @include color-4;
+    height: 453px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+
+    h1 {
+        margin: 0;
+        padding: 60px 0 135px 36px;
+
+        @include font-4;
+        @include font-color-2;
+        font-size: 4.5rem;
+        text-shadow: 2px 2px 4px #5AD8CA;
+    }
+    div{
+        @include font-5;
+        @include font-color-2;
+        font-weight: 600;
+        
+        padding: 0 0 0 36px;
+        p {
+            font-size: 2.75rem;
+            padding-bottom: 10px;
+        }
+        button {
+            @include font-2;
+            font-weight: 600;
+            font-size: 2.1rem;
+
+            width:463px;
+            height: 85px;
+            border-radius: 10px;
+            border-style: none;
+        }
+    }
+}
+
+.about-upcoming {
+    @include flex-r;
+    @include font-color-2;
+
+    margin: 25px 0;
+    .about, .upcoming {
+        @include color-5;
+    }
+    .about {
+        @include flex-r;
+        flex-basis: 60%;
+        margin-right:25px;
+        h3 {
+            padding:20px 20px 0 20px;
+            @include font-2;
+            font-size: 2rem;
+        }
+        p {
+            padding:25px;
+            @include font-3;
+            font-size: 1rem;
+        }
+    }
+
+
+
+
+    .upcoming {
+        flex-basis: 40%;
+        .flex-fix {
+            @include flex;
+            @include font-3;
+
+        }
+        h3 {
+            padding:20px 0 20px 25px;
+            @include font-2;
+            font-size: 2rem;
+        }
+        .book-cat {
+            @include flex-r;
+            font-size:1.2rem;
+
+            width:85%;
+            justify-content: space-between;
+        }
+        .book-bundle {
+            width:90%;
+        }
+        .book-info {
+            font-size:1.2rem;
+
+            @include flex-r;
+            justify-content: space-between;
+            
+            background-color: #2E7D6B;
+            padding:13px;
+            margin: 5px;
+        }
+    }
 }
