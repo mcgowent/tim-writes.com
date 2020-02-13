@@ -1,0 +1,78 @@
+.newsletter {
+    @include flex;
+    .newsletter-box {
+        display: flex;
+    }
+    h4{
+        @include font-3;
+        font-weight: 100;
+
+        font-size: 2rem;
+        padding: 20px 75px;
+        margin-bottom: 80px;
+
+        border-bottom: 1px solid black;
+    }
+    .title-mobile {
+        display: none;
+    }
+    .newsletter-right {
+        @include flex;
+        justify-content: space-between;
+
+        flex-basis: 45%;
+
+        .title-desktop {
+        @include font-4;
+        font-size: 4rem;
+        font-weight: 900;
+        }
+        p{
+        @include font-4;
+        font-size: 1.5rem;
+        font-weight: 100;
+        }
+        div {
+            @include flex;
+            input, button {
+                width: 100%;
+                border-radius: 10px;
+                @include font-2;
+                font-size: 2rem;
+            }
+            input {
+                height: 75px;
+                box-sizing: border-box;
+                border: 1px solid #3B3B3B;
+                padding-left: 15px;
+                margin-bottom:15px; 
+
+            }
+            button {
+                border:none;
+                @include font-color-2;
+                @include color-6;
+                height: 75px;
+            }
+
+            p{
+                font-size: .8rem;
+            }
+        }
+    }
+
+    .dead-man-cover {
+        margin-right: 50px;
+
+        display:flex;
+        justify-content: center;
+        align-items: center;
+
+        flex-basis: 45%;
+        height: 780px;
+        @include color-4;
+        @include font-color-2;
+        @include font-1;
+        font-size:4rem;
+    }
+}
