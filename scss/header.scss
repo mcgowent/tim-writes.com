@@ -15,13 +15,15 @@
 }
 
 .banner {
-
+    box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     background-image: url("../assets/img/Cover2.jpg");
     @include color-4;
     height: 453px;
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
+
+    // margin-top: 25px;
 
     h1 {
         margin: 0;
@@ -51,6 +53,7 @@
             height: 85px;
             border-radius: 10px;
             border-style: none;
+            box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
         }
     }
 }
@@ -62,6 +65,7 @@
     margin: 25px 0;
     .about, .upcoming {
         @include color-5;
+            box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     }
     .about {
         @include flex-r;
@@ -105,6 +109,8 @@
             width:90%;
         }
         .book-info {
+            box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+
             font-size:1.2rem;
 
             @include flex-r;

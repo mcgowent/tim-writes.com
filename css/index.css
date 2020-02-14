@@ -392,6 +392,7 @@ a {
 }
 
 .banner {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   background-image: url("../assets/img/Cover2.jpg");
   background-color: #656565;
   height: 453px;
@@ -425,6 +426,7 @@ a {
   height: 85px;
   border-radius: 10px;
   border-style: none;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 
 .about-upcoming {
@@ -435,6 +437,7 @@ a {
 }
 .about-upcoming .about, .about-upcoming .upcoming {
   background-color: #245D50;
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
 }
 .about-upcoming .about {
   display: flex;
@@ -477,6 +480,7 @@ a {
   width: 90%;
 }
 .about-upcoming .upcoming .book-info {
+  box-shadow: 0px 3px 15px rgba(0, 0, 0, 0.2);
   font-size: 1.2rem;
   display: flex;
   flex-flow: row nowrap;
