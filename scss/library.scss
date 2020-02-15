@@ -30,6 +30,7 @@
                 padding:50px 0;
                 margin-bottom: 50px;
                 font-size: 4rem;
+                @include font-color-3;
             }
             width: 100%;
             @include flex;
@@ -52,6 +53,21 @@
                     @include font-color-2;
                     @include font-1;
                     font-size:2rem;
+                    border-radius: 3px;
+
+                }
+                .ek-b1{
+                    background-image: url("../assets/img/ek-b1.jpg");
+                    background-repeat: no-repeat;
+                    background-size: 350px 500px;
+
+
+                    p {
+                        color: black;
+                        background-color:white;
+                        border-radius: 3px;
+                        padding:5px;
+                    }
                 }
             }
         }
