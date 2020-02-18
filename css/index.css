@@ -399,28 +399,19 @@ a {
   .nav {
     padding-left: 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     align-items: center;
-    width: 300px;
+    width: 375px;
   }
-  .nav .home {
-    display: none;
-  }
-  .nav li a {
-    font-size: 1rem;
-    color: white;
-  }
-  .nav li:nth-child(odd) {
+  .nav li {
     background-color: #656565;
     padding: 10px;
     margin: 3px;
     border-radius: 3px;
   }
-  .nav li:nth-child(even) {
-    background-color: #245D50;
-    padding: 10px;
-    margin: 3px;
-    border-radius: 3px;
+  .nav li a {
+    font-size: 1rem;
+    color: white;
   }
 }
 .header {
@@ -764,6 +755,7 @@ a {
     flex-direction: column;
   }
   .newsletter .newsletter-box .title-mobile {
+    font-size: 2rem;
     display: inline;
   }
   .newsletter .newsletter-box .newsletter-right {
@@ -776,6 +768,8 @@ a {
     display: none;
   }
   .newsletter .dead-man-cover {
+    margin-top: 15px;
+    height: auto;
     margin-right: 0;
     font-size: 2rem;
     padding: 170px 65px;
@@ -917,7 +911,7 @@ a {
   padding-bottom: 50px;
   display: flex;
   flex-direction: column;
-  font-size: 2rem;
+  font-size: 1.8rem;
   font-family: "EB Garamond", serif;
 }
 .footer .footer-flex p {
@@ -926,7 +920,14 @@ a {
   font-weight: 900;
 }
 .footer .footer-flex i {
+  color: white;
   padding-top: 25px;
+}
+.footer .footer-flex i span {
+  margin-left: 35px;
+}
+.footer .footer-flex span:hover {
+  color: #5DBEB2;
 }
 .footer .footer-bottom {
   display: flex;

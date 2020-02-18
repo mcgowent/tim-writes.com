@@ -130,6 +130,7 @@
         align-items: center;
         flex-direction: column;
             .title-mobile {
+                font-size: 2rem;
                 display: inline;
             }
             .newsletter-right{
@@ -143,6 +144,8 @@
     display:none;
     }
     .dead-man-cover {
+        margin-top:15px;
+        height: auto;
         margin-right: 0;
         font-size:2rem;
         padding:170px 65px;
