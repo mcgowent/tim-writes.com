@@ -3,7 +3,6 @@
     justify-content: center;
     height: 90px;
 }
-
 .name {
     @include font-1;
     @include font-color-1;
@@ -14,13 +13,11 @@
     margin-top: -10px;
 }
 
-
-
-
 .banner {
     border-radius: 3px;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
     background-image: url("../assets/img/Cover2.jpg");
+    
     @include color-4;
     height: 453px;
     background-position: center;

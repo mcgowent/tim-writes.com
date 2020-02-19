@@ -8,7 +8,6 @@ a {
 }
 .flex {
     // Applied to keep all inner divs centered.
-    @include flex;
     @include color-1;
 
 }
