@@ -1,28 +1,47 @@
+.banner {
+    grid-area: banner;
+}
+.about {
+    grid-area: about;
+    background-color: red;
+}
+.upcoming {
+    grid-area: upcoming;
+    background-color: red;
 
-.header {
-    justify-content: center;
-    height: 90px;
 }
-.name {
-    @include font-1;
-    @include font-color-1;
-    font-size: 3.8rem;
-    font-weight: 100;
-    // Normalization was adding margin?
-    margin: 0;
-    margin-top: -10px;
+
+
+.header-grid{
+    // height: 100vh;
+    margin: 0 auto;
+    max-width: 1200px;
+    grid-gap: 25px;
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+    grid-template-areas: "banner banner banner banner banner"
+                         "banner banner banner banner banner"
+                         "banner banner banner banner banner"
+                         "about about about upcoming upcoming"
+                         "about about about upcoming upcoming";
 }
+
+
+
+
+
 
 .banner {
     border-radius: 3px;
     box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
-    background-image: url("../assets/img/Cover2.jpg");
-    
     @include color-4;
-    height: 453px;
+
+    background-image: url("../assets/img/Cover2.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size:cover;
+
     h1 {
         margin: 0;
         padding: 60px 0 135px 36px;
@@ -57,18 +76,16 @@
     }
 }
 
-.about-upcoming {
 
-    @include flex-r;
-    @include font-color-2;
+// .about, .upcoming {
+//         @include font-color-2;
+//         margin: 25px 0;
+//         @include color-5;
+//             box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
+//         border-radius: 3px;
 
-    margin: 25px 0;
-    .about, .upcoming {
-        @include color-5;
-            box-shadow: 0px 3px 15px rgba(0,0,0,0.2);
-        border-radius: 3px;
+//     }
 
-    }
     .about {
         img {
         border-radius: 3px 0 0 3px;
@@ -76,7 +93,6 @@
         }
         @include flex-r;
         flex-basis: 60%;
-        margin-right:25px;
         h3 {
             padding:20px 20px 0 20px;
             @include font-2;
@@ -128,7 +144,7 @@
             margin: 5px;
         }
     }
-}
+
 
 
 
