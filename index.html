@@ -31,12 +31,12 @@
     </header>
     <nav class="wrapper">
         <ul class="nav">
-            <li class="home"><a href="./">Home</a></li>
-            <li class="books"><a href="./pages/books.html">Books</a></li>
+            <li><a href="./">Home</a></li>
+            <li><a href="./pages/books.html">Books</a></li>
             <!-- <li class="art"><a href="#">Art</a></li> -->
-            <li class="newsletter"><a href="./pages/newsletter.html">Newsletter</a></li>
-            <li class="about"><a href="./pages/about.html">About</a></li>
-            <li class="Store"><a href="https://store.tim-writes.com/">Store</a></li>
+            <li><a href="./pages/newsletter.html">Newsletter</a></li>
+            <li><a href="./pages/about.html">About</a></li>
+            <li><a href="https://store.tim-writes.com/">Store</a></li>
 
         </ul>
     </nav>
@@ -48,7 +48,8 @@
                 <h1>ELDRITCH KNIGHT</h1>
                 <div>
                     <p>AVAILABLE ON 6-5-20!</p>
-                    <a href="https://www.amazon.com/" target="_blank"><button>Pre-Order on Amazon!</button></a>
+                    <a href="https://www.amazon.com/" target="_blank" class="clicker"><button>Pre-Order on
+                            Amazon!</button></a>
                 </div>
             </div>
         </section>
@@ -56,21 +57,7 @@
             <section class="about-upcoming">
                 <div class="about">
                     <img src="./assets/img/image0.jpg" alt="Image of Author Timothy M. McGowen" />
-                    <div>
-                        <h3>About Me</h3>
-                        <p>Timothy M. McGowen is a writer of the fantastic. Although generally, this falls within the
-                            fantasy genre, he doesn't
-                            feel constrained to stay within those boundaries. Like all great writers, Timothy loves to
-                            read, but more than that, he
-                            loves a good story.<br><br>
-                            Timothy presently lives in Arizona with his wife and two daughters. He has written stories
-                            his entire life but marks
-                            2017 as a defining moment when he became a writer. What followed was two years of consistent
-                            writing, leading up to his
-                            first self-published novel on 06/05/2020.
-
-                        </p>
-                    </div>
+                    <div id="about-me"></div>
                 </div>
                 <div class="upcoming">
                     <h3>Upcoming Releases</h3>
@@ -79,20 +66,7 @@
                             <h5>Book Name</h5>
                             <h5>Estimated Release</h5>
                         </div>
-                        <div class="book-bundle">
-                            <div class="book-info">
-                                <p>Last Born of Ki'dath Book 1</p>
-                                <p>08-05-2020</p>
-                            </div>
-                            <div class="book-info">
-                                <p>Last Born of Ki'dath Book 2</p>
-                                <p>10-05-2020</p>
-                            </div>
-                            <div class="book-info">
-                                <p>Last Born of Ki'dath Book 3</p>
-                                <p>12-05-2020</p>
-                            </div>
-                        </div>
+                        <div class="book-bundle" id="upcoming-releases"></div>
                     </div>
                 </div>
             </section>
@@ -132,7 +106,7 @@
                         <!-- no botz please -->
                         <div style="position: absolute; left: -5000px;" aria-hidden="true"><input type="text"
                                 name="a_password" tabindex="-1" value="" autocomplete="off" /></div>
-                        <button type="submit">Sign up for a free Novella!</button>
+                        <button class="clicker" type="submit">Sign up for a free Novella!</button>
                         <p>Sign up for my newsletter to stay updated on upcoming releases and promotions! I will keep
                             you in
                             the loop without spamming your inbox!</p>
@@ -151,7 +125,7 @@
                     <!-- Add all books for the Trilogy -->
                     <div class="trilogy-books">
                         <div class="book ek-b1">
-                            <p>Releases 6-5-20</p>
+
                         </div>
                     </div>
                 </div>
@@ -177,5 +151,6 @@
 
     </footer>
 </body>
+<script type="text/javascript" src="./js/header.js"></script>
 
 </html>
