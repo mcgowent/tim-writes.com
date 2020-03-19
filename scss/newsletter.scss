@@ -1,14 +1,25 @@
 .newsletter {
     @include flex;
+        background-image: linear-gradient(0deg, rgba(33,42,42, .2) 1%, rgba(33,42,42,.10) 20%, rgba(33,42,42,0) 80%, rgba(33,42,42,.2) 99%),linear-gradient(90deg, rgba(33,42,42, .2) 1%, rgba(33,42,42,0) 20%, rgba(33,42,42,0) 80%, rgba(33,42,42,.2) 99%),url("http://www.zingerbugimages.com/backgrounds/tan_parchment_paper_wallpaper_texture_seamless.jpg");
+
+    background-color: #fff;
+
+
+    align-items: center;
+    padding: 0 0 35px 5px;
+    border-radius: 3px;
+    box-shadow: 1px 1px 7px 0px rgba(4, 4, 4, 0.35);
+
     .newsletter-box {
         display: flex;
+        justify-content: space-around;
     }
     h4{
         @include font-2;
         font-weight: 100;
 
-        font-size: 2.5rem;
-        padding: 20px 75px;
+        font-size: 3.9rem;
+        padding: 50px 75px;
         margin-bottom: 80px;
 
         border-bottom: 1px solid black;
@@ -62,7 +73,12 @@
     }
 
     .dead-man-cover {
-        margin-right: 50px;
+
+        background-image: url("../assets/img/Bounty_Cover.jpg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size:cover;
+
 
         display:flex;
         justify-content: center;
@@ -87,7 +103,7 @@
     }
     .newsletter-right {
         .title-desktop {
-        font-size: 2.7rem;
+        font-size: 2.5rem;
         }
         p{
         font-size: 1rem;
@@ -119,6 +135,7 @@
 
 @media only screen and (max-width: 765px) {
 .newsletter {
+    margin-top:35px;
     h4{
         padding-left: 0;
         padding-right: 0;
@@ -148,7 +165,7 @@
         height: auto;
         margin-right: 0;
         font-size:2rem;
-        padding:170px 65px;
+        padding:205px 65px;
         border-radius: 3px;
 
     }
