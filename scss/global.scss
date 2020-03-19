@@ -2,21 +2,25 @@
     // Resets gab above the Nav element
     margin: 0;
     list-style-type:none;
+    
 }
+
 a {
     text-decoration: none;
 }
 .flex {
     // Applied to keep all inner divs centered.
     @include flex;
-    @include color-1;
+    background-color: #212a2a;
 }
+
+
 .wrapper {
     max-width: 1200px;
 }
 .full-width-color {
-    background-color: #242424;
     width: 100%;
+    
 }
 .clicker:hover button, .clicker:hover {
     cursor: pointer;
